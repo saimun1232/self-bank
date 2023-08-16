@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-7">let get Your <span class="font-semibold text-orange-500">SeLf BaNk information!</span></h1>
+    </header>
+<main class="w-[100%]">
+<section class="w-[80%] mx-auto lg:grid grid-cols-3 gap-5">
+<div class="text-black rounded-xl p-4 w-48 bg-amber-400 shadow-xl mt-5">
+    <h3 class="text-1xl">Current Deposit</h3>
+    <p  class="text-4xl">$<span id="deposit-amount">00</span></p>
+</div>
+<div class="text-black rounded-xl p-4 w-48 bg-orange-400 shadow-xl mt-5">
+        <h3 class="text-1xl">Withdraw Deposit</h3>
+        <p class="text-4xl">$<span id="Withdraw-amount">00</span></p>
+</div>
+<div class="text-black rounded-xl p-4 w-48 bg-red-400 shadow-xl mt-5">
+    <h3 class="text-1xl">Total Blance</h3>
+    <p class="text-4xl">$<span id="Blance-total">00</span></p>
+</div>
+</section>
+<section class="w-[80%] mt-6 mx-auto flex ox-border py-5 px-1">
+<div class="w-[50%]">
+    <h1 class="mb-5">Please Deposit</h1>
+    <div class="w-[90%]  mx-auto mb-5">
+        <input id="Deposit-input" class="py-1 px-2 block mb-3 w-[100%] outline-none rounded-xl" type="text" placeholder="Please Enter Your Deposit Amount">
+</div>
+<button id="btn-deposit" class="btn btn-primary bg-slate-400">Deposit</button>
+</div>
+<div class="w-[50%]">
+    <h1 class="mb-5">Please Withdraw</h1>
+    <div class="w-[90%] mx-auto mb-5">
+         <input id="Withdraw-input" class="py-1 px-2 block mb-3 w-[100%] outline-none rounded-xl" type="text" placeholder="Please Enter Your Withdraw Amount">
+    </div>
+    <button id="btn-withdraw" class="btn btn-primary bg-orange-300">Withdraw</button>
+</div>
+</section>
+</main>
+<script src="deposit.js"></script>
+<script src="withdraw.js"></script>
+</body>
+</html>
