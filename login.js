@@ -12,7 +12,7 @@ const passwordField = document.getElementById('password-handler');
 const password = passwordField.value;
 // do not verify email password on the client site
 // step4- verify email and password
-if(email==='whitedevil369@gamil.com' && password ==='devil'){
+if(email==='whitedevil369@gmail.com' && password ==='devil'){
 window.location.href='index2.html'
 }
 else{
